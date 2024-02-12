@@ -1,6 +1,75 @@
-.main_container, .yarden {
-  height: 300px;
-  width: 500px;
-  background-color: blueviolet;
-  border: black 1px solid;
+:root {
+  --normal-gap: 0.5rem;
+
+  --color-blue: #1c4ea3;
+  --color-white: whitesmoke;
+
+  --border-radius-normal: 0.3rem
+}
+
+body {
+  background-color: var(--color-blue);
+}
+
+button {
+  padding: var(--normal-gap);
+  margin: var(--normal-gap);
+  border-radius: var(--border-radius-normal);
+  border: none;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+input {
+  flex-grow: 1;
+  margin: var(--normal-gap);
+  border-radius: var(--border-radius-normal);
+}
+
+/* input&:focus-visible {
+  outline-color: var(--color-blue);
+} */
+
+.container {
+  display: flex;
+}
+
+.container_main {
+  width: 25rem;
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  margin: auto;
+  position: relative;
+  top: 10rem;
+  padding: var(--normal-gap);
+  flex-direction: column;
+}
+
+.container_new_task {
+  margin: var(--normal-gap) 0;
+}
+
+.container_tasks {
+  flex-direction: column;
+  margin: var(--normal-gap) 0;
+}
+
+.container_task {
+  margin: var(--normal-gap) var(--normal-gap) 0;
+  background-color: #9EB4B7;
+  border: 1px solid grey;
+  border-radius: var(--border-radius-normal);
+}
+
+.container_task input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.task {
+  width: calc(100% - (3 * var(--normal-gap)));
+}
+
+button.delete {
+  background-color: #161680;
 }

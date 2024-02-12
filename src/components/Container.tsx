@@ -2,12 +2,12 @@ import React, { ReactNode } from "react";
 
 interface IContainer {
     children:ReactNode;
-    className:string;
+    className?:string;
 }
 
 const Container = ({children, className="", ...props}:IContainer) => {
     return (
-        <div className={`container ${className}`} {...props}>
+        <div className={`container container_${className}`} {...props}>
             {children}
         </div>
     )

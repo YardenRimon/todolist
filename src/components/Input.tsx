@@ -8,7 +8,7 @@ interface IInput {
 
 const Input = ({className="", placeHolder="type here", value="", ...props }:IInput) => {
     return (
-        <input placeholder={placeHolder} className={`input ${className}`} value={value} />
+        <input placeholder={placeHolder} className={`${className}`} value={value} />
     )
 }
 

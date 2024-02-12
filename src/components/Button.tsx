@@ -8,7 +8,7 @@ interface IButton {
 
 const Button = ({className="", text, action, ...props }:IButton) => {
     return (
-        <button className={`button ${action}_button`}>
+        <button className={`${action}`}>
             {text}
         </button>
     )
